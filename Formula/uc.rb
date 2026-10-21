@@ -8,6 +8,7 @@ class Uc < Formula
   def install
     system "make"
     bin.install "uc"
+    man1.install "uc.1"
   end
 
   test do
