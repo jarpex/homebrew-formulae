@@ -27,7 +27,7 @@ class Q < Formula
 
   def install
     if build.head?
-      system "cargo", "install", "--path", ".", "--locked", "--root", staging_prefix
+      system "cargo", "install", "--path", ".", "--locked", "--root", prefix
     else
       bin.install "q"
     end
