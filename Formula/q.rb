@@ -1,27 +1,27 @@
 class Q < Formula
   desc "CLI tool for quick, one-shot Gemini queries with no API key required"
   homepage "https://github.com/jarpex/q"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
   head "https://github.com/jarpex/q.git", branch: "main"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jarpex/q/releases/download/v0.4.0/q-macos-apple-silicon.tar.gz"
-      sha256 "16ed30c710fd9fbfd1ecb84727b87faf39a7e72576584b63cb4b32eeae4d8aba"
+      url "https://github.com/jarpex/q/releases/download/v0.5.0/q-macos-apple-silicon.tar.gz"
+      sha256 "7f49caebcdbfae2aeefa9ab658e9726bd143a66c14ed59c54cec71b9f17ca9e8"
     else
-      url "https://github.com/jarpex/q/releases/download/v0.4.0/q-macos-intel.tar.gz"
-      sha256 "d68d8e8a2d652792d4ff6fdfb680960a39eccda4455629e8e04391379f9af739"
+      url "https://github.com/jarpex/q/releases/download/v0.5.0/q-macos-intel.tar.gz"
+      sha256 "0313bead4fb2ad185191df6b8db5fc6f83231777366c2c89c9ad4d839c7f129b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jarpex/q/releases/download/v0.4.0/q-linux-arm64.tar.gz"
-      sha256 "62d20b44d715db93eed99c53211117d90a8160843a5dd9b00973d57d0005c0d6"
+      url "https://github.com/jarpex/q/releases/download/v0.5.0/q-linux-arm64.tar.gz"
+      sha256 "2a208d898719f9d64812ce4e71d47cb11b6fc2a8afe13ed00f8fa87b04513024"
     else
-      url "https://github.com/jarpex/q/releases/download/v0.4.0/q-linux-amd64.tar.gz"
-      sha256 "696d684f79b26b5c8a764c4eb303b882fc24bcec825a1a1ad30e299a87ebfefa"
+      url "https://github.com/jarpex/q/releases/download/v0.5.0/q-linux-amd64.tar.gz"
+      sha256 "d365509fc93fbb1f696688d17a462ff6866341b3b25076c08f1858bb066b67b4"
     end
   end
 
