@@ -37,7 +37,7 @@ class Q < Formula
 
   def caveats
     old_man = File.expand_path("~/.local/share/man/man1/q.1")
-    return nil unless File.exist?(old_man)
+    return unless File.exist?(old_man)
 
     <<~EOS
       A manually installed man page at ~/.local/share/man/man1/q.1 takes

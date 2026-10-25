@@ -13,6 +13,18 @@ class Uc < Formula
     man1.install "uc.1"
   end
 
+  def caveats
+    paths = ["/usr/local/share/man/man1/uc.1", File.expand_path("~/.local/share/man/man1/uc.1")]
+    existing = paths.select { |p| File.exist?(p) }
+    return if existing.empty?
+
+    <<~EOS
+      A manually installed man page takes precedence over the Homebrew one
+      and may be out of date. Remove it:
+      #{existing.map { |p| "  rm #{p}" }.join("\n")}
+    EOS
+  end
+
   test do
     assert_match "usage: uc", shell_output("#{bin}/uc -h 2>&1")
   end

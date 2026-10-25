@@ -18,6 +18,17 @@ class Siligpu < Formula
     end
   end
 
+  def caveats
+    old_man = File.expand_path("~/.local/share/man/man1/siligpu.1")
+    return unless File.exist?(old_man)
+
+    <<~EOS
+      A manually installed man page at ~/.local/share/man/man1/siligpu.1 takes
+      precedence over the Homebrew one and may be out of date. Remove it:
+        rm ~/.local/share/man/man1/siligpu.1
+    EOS
+  end
+
   test do
     assert_match "siligpu", shell_output("#{bin}/siligpu --version")
   end
