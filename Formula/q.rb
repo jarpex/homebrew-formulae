@@ -32,7 +32,18 @@ class Q < Formula
       bin.install "q"
     end
     # The man page came with the release after 0.4.0.
-    man1.install "man/q.1" if File.exist?("man/q.1")
+    man1.install "man/q.1"
+  end
+
+  def caveats
+    old_man = File.expand_path("~/.local/share/man/man1/q.1")
+    return nil unless File.exist?(old_man)
+
+    <<~EOS
+      A manually installed man page at ~/.local/share/man/man1/q.1 takes
+      precedence over the Homebrew one and may be out of date. Remove it:
+        rm ~/.local/share/man/man1/q.1
+    EOS
   end
 
   test do
