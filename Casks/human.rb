@@ -1,6 +1,6 @@
 cask "human" do
-  version "1.0.0"
-  sha256 "77bc38b5a33e0a01dc20603ad6d8abd407c6a0ffcb0d8264c4b654ebc945929c"
+  version "1.0.1"
+  sha256 "ee64a534f20f6b53bb2c136510bf9cdb04496ab2266c57e46539fd2a3216760d"
 
   url "https://github.com/jarpex/Human/releases/download/v#{version}/Human.zip"
   name "Human"
