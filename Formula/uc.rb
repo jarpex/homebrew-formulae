@@ -18,10 +18,12 @@ class Uc < Formula
     existing = paths.select { |p| File.exist?(p) }
     return if existing.empty?
 
+    commands = existing.map { |p| "  rm #{p}" }.join("\n")
+
     <<~EOS
       A manually installed man page takes precedence over the Homebrew one
       and may be out of date. Remove it:
-      #{existing.map { |p| "  rm #{p}" }.join("\n")}
+      #{commands}
     EOS
   end
 
