@@ -17,6 +17,7 @@ brew install <formula>
 
 ## Formulae
 
+- [codestyle](https://github.com/jarpex/codestyle): Code style checker for Zig and C99 with SARIF output.
 - [q](https://github.com/jarpex/q): CLI tool for Gemini queries without an API key.
 - [siligpu](https://github.com/jarpex/siligpu): Apple Silicon GPU usage snapshot tool.
 - [uc](https://github.com/jarpex/uc): Filter to inspect or clean Unicode artifacts.
