@@ -1,9 +1,9 @@
 class Uc < Formula
   desc "Primitive filter to show or clean Unicode artifacts in text"
   homepage "https://github.com/jarpex/uc"
-  url "https://github.com/jarpex/uc/releases/download/v1.0.2/uc-1.0.2.tar.gz"
-  version "1.0.2"
-  sha256 "c32431219cb67ae2f9b9c61ae5b651cf1805227854b04b7df9f04f938e82d8c1"
+  url "https://github.com/jarpex/uc/releases/download/v1.0.3/uc-1.0.3.tar.gz"
+  version "1.0.3"
+  sha256 "6eca27d33fc9151563009ebb62ee6a0f398fe4b74306a008022b3ba5887df9b0"
   license "MIT"
   head "https://github.com/jarpex/uc.git", branch: "main"
 
